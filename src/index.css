@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+* {
+    background-color: #F45050;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    padding: 1.5rem;    
+}
+
+input {
+    border-color: white;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+p, span {
+    background-color: white;
+    color: black;
+}
+
+::placeholder {
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sub {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-grid {
+    display: block;
+}
+
+.card {
+    align-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    border: 0.5rem solid lightgrey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card-info {
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.card img {
+    background-color: white;
+    border-radius: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-info p {
+    text-align: left;
+}
+
+.card-info span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 4rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .card-grid {
+        column-gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-info {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 95%;
+    }
+}
