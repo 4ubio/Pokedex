@@ -12,7 +12,9 @@ export const fetchPokemon = async(name) => {
         name: data.name,
         sprite: data.sprites.front_default,
         type1: data.types[0].type.name, 
+        type2: data.types[1]?.type.name, 
         ability1: data.abilities[0].ability.name,
+        ability2: data.abilities[1]?.ability.name,
         description: data_2.flavor_text_entries[0].flavor_text
     }
     
